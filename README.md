@@ -1,2 +1,1 @@
-# website
-Personal website
+Personal website built with [Jekyll](https://jekyllrb.com/) and the [al-folio theme](https://alshedivat.github.io/al-folio/).
