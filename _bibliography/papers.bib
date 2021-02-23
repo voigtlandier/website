@@ -1,0 +1,436 @@
+---
+---
+
+@string{tog-s = {ACM Transactions on Graphics (Proc. of SIGGRAPH)}}
+@string{tog-sa = {ACM Transactions on Graphics (Proc. of SIGGRAPH Asia)}}
+@string{cvpr = {Proceedings of Conference on Computer Vision and Pattern Recognition (CVPR)}}
+
+@misc{Luo2020,
+  author = {Luo, X. and Zhang, X. and Yoo, P. and Martin-Brualla, R. and Lawrence, J. and Seitz, S. M.},
+  title = {Time-Travel Rephotography},
+  html = {https://time-travel-rephotography.github.io/},
+  year = {2020},
+  eprint = {2012.12261},
+  prefix = {arXiv},
+  primaryClass = {cs.CV},
+  abstract = {Many historical people are captured only in old, faded, black and white photos, that have been distorted by the limitations of early cameras and the passage of time. This paper simulates traveling back in time with a modern camera to rephotograph famous subjects. Unlike conventional image restoration filters which apply independent operations like denoising, colorization, and superresolution, we leverage the StyleGAN2 framework to project old photos into the space of modern high-resolution photos, achieving all of these effects in a unified framework. A unique challenge with this approach is capturing the identity and pose of the photo's subject and not the many artifacts in low-quality antique photos. Our comparisons to current state-of-the-art restoration filters show significant improvements and compelling results for a variety of important historical people.}
+}
+
+@misc{Xia2020,
+  author = {Xia, Z. and Lawrence, J. and Achar, S.},
+  title = {A Dark Flash Normal Camera},
+  html = {https://darkflashnormalpaper.github.io/},
+  year = {2020},
+  eprint = {2012.06125},
+  prefix = {arXiv},
+  primaryClass = {cs.CV},
+  abstract = {Casual photography is often performed in uncontrolled lighting that can result in low quality images and degrade the performance of downstream processing. We consider the problem of estimating surface normal and reflectance maps of scenes depicting people despite these conditions by supplementing the available visible illumination with a single near infrared (NIR) light source and camera, a so-called "dark flash image". Our method takes as input a single color image captured under arbitrary visible lighting and a single dark flash image captured under controlled front-lit NIR lighting at the same viewpoint, and computes a normal map, a diffuse albedo map, and a specular intensity map of the scene. Since ground truth normal and reflectance maps of faces are difficult to capture, we propose a novel training technique that combines information from two readily available and complementary sources: a stereo depth signal and photometric shading cues. We evaluate our method over a range of subjects and lighting conditions and describe two applications: optimizing stereo geometry and filling the shadows in an image.}
+}
+
+@inproceedings{Luo2020,
+  author = {Luo, X. and Kong, Y. and Lawrence, J. and Martin-Brualla, R. and Seitz, S. M.},
+  booktitle = {Proceedings of International Conference on 3D Vision (3DV)},
+  title = {KeystoneDepth: History in 3D}, 
+  year = {2020},
+  html = {https://ieeexplore.ieee.org/abstract/document/9320428},
+  website = {http://keystonedepth.cs.washington.edu},
+  abstract = {This paper introduces KeystoneDepth, the largest and most diverse collection of rectified historical stereo image pairs to date, consisting of tens of thousands of stereographs of people, events, objects, and scenes recorded between 1864 and 1966. Leveraging the Keystone-Mast Collection of stereographs from the California Museum of Photography, we apply multiple processing steps to produce clean stereo image pairs, complete with calibration data, rectification transforms, and disparity maps. We introduce a novel stereo rectification technique based on the unique properties of antique stereo cameras. To better visualize the results on 2D displays, we also introduce a self-supervised deep view synthesis technique trained on historical imagery. Our dataset is available at http://keystonedepth.cs.washington.edu.}
+}
+
+@inproceedings{Luo2017,
+  author = {Luo, X. and Lawrence, J. and Seitz, S. M.},
+  title = {Pepper's Cone: An Inexpensive Do-It-Yourself 3D Display},
+  year = {2017},
+  html = {https://doi.org/10.1145/3126594.3126602},
+  booktitle = {Proceedings of User Interface Software and Technology (UIST)},
+  abstract = {This paper describes a simple 3D display that can be built from a tablet computer and a plastic sheet folded into a cone. This display allows naturally viewing a three-dimensional object from any direction over a 360-degree path of travel without the use of a head mount or special glasses. Inspired by the classic Pepper's Ghost illusion, our approach uses a curved transparent surface to reflect the image displayed on a 2D display. By properly pre-distorting the displayed image our system can produce a perspective-correct image to the viewer that appears to be suspended inside the reflector. We use the gyroscope integrated into modern tablet computers to adjust the rendered image based on the relative orientation of the viewer. The end result is a natural and intuitive interface for inspecting a 3D object. Our choice of a cone reflector is obtained by analyzing optical performance and stereo-compatibility over rotationally-symmetric conic reflector shapes. We also present the prototypes we built and measure the performance of our display through side-by-side comparisons with reference images.}
+}
+
+@article{Lou2016,
+  abbr = {SIGGRAPH},
+  author = {Lou, L. and Nguyen, P. and Lawrence, J. and Barnes, C.},
+  title = {Image Perforation: Automatically Accelerating Image Pipelines by Intelligently Skipping Samples},
+  journal = tog-s,
+  year = {2016},
+  volume = {35},
+  number = {5},
+  html = {https://doi.org/10.1145/2904903},
+  abstract = {Image pipelines arise frequently in modern computational photography systems and consist of multiple processing stages where each stage produces an intermediate image that serves as input to a future stage. Inspired by recent work on loop perforation [Sidiroglou-Douskos et al. 2011], this article introduces image perforation, a new optimization technique that allows us to automatically explore the space of performance-accuracy tradeoffs within an image pipeline. Image perforation works by transforming loops over the image at each pipeline stage into coarser loops that effectively “skip” certain samples. These missing samples are reconstructed for later stages using a number of different interpolation strategies that are relatively inexpensive to perform compared to the original cost of computing the sample. We describe a genetic algorithm for automatically exploring the resulting combinatoric search space of which loops to perforate, in what manner, by how much, and using which reconstruction method. We also present a prototype language that implements image perforation along with several other domain-specific optimizations and show results for a number of different image pipelines and inputs. For these cases, image perforation achieves speedups of 2 \texttimes{} --10 \texttimes{} with acceptable loss in visual quality and significantly outperforms loop perforation.}
+}
+
+@article{Dorn2015,
+  author = {Dorn, J. and Barnes, C. and Lawrence, J. and Weimer, W.},
+  title = {Towards Automatic Band-Limited Procedural Shaders},
+  journal = {Computer Graphics Forum},
+  year = {2015},
+  volume = {34},
+  number = {7},
+  html = {https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.12747},
+  abstract = {Abstract Procedural shaders are a vital part of modern rendering systems. Despite their prevalence, however, procedural shaders remain sensitive to aliasing any time they are sampled at a rate below the Nyquist limit. Antialiasing is typically achieved through numerical techniques like supersampling or precomputing integrals stored in mipmaps. This paper explores the problem of analytically computing a band-limited version of a procedural shader as a continuous function of the sampling rate. There is currently no known way of analytically computing these integrals in general. We explore the conditions under which exact solutions are possible and develop several approximation strategies for when they are not. Compared to supersampling methods, our approach produces shaders that are less expensive to evaluate and closer to ground truth in many cases. Compared to mipmapping or precomputation, our approach produces shaders that support an arbitrary bandwidth parameter and require less storage. We evaluate our method on a range of spatially-varying shader functions, automatically producing antialiased versions that have comparable error to 4×4 multisampling but can be over an order of magnitude faster. While not complete, our approach is a promising first step toward this challenging goal and indicates a number of interesting directions for future work.}
+}
+
+@article{Brady2014,
+  abbr = {SIGGRAPH},
+  selected = true,
+  author = {Brady, A. and Lawrence, J. and Peers, P. and Weimer, W.},
+  title = {GenBRDF: Discovering New Analytic BRDFs with Genetic Programming},
+  journal = tog-s,
+  year = {2014},
+  volume = {33},
+  number = {4},
+  issn = {0730-0301},
+  html = {https://doi.org/10.1145/2601097.2601193},
+  abstract = {We present a framework for learning new analytic BRDF models through Genetic Programming that we call genBRDF. This approach to reflectance modeling can be seen as an extension of traditional methods that rely either on a phenomenological or empirical process. Our technique augments the human effort involved in deriving mathematical expressions that accurately characterize complex high-dimensional reflectance functions through a large-scale optimization. We present a number of analysis tools and data visualization techniques that are crucial to sifting through the large result sets produced by genBRDF in order to identify fruitful expressions. Additionally, we highlight several new models found by genBRDF that have not previously appeared in the BRDF literature. These new BRDF models are compact and more accurate than current state-of-the-art alternatives.}
+}
+
+@article{Jakob2014,
+  abbr = {SIGGRAPH},
+  author = {Jakob, W. and Ha\v{s}an, M. and Yan, L. and Lawrence, J. and Ramamoorthi, R. and Marschner, S.},
+  title = {Discrete Stochastic Microfacet Models},
+  journal = tog-s,
+  year = {2014},
+  volume = {33},
+  number = {4},
+  html = {https://doi.org/10.1145/2601097.2601186},
+  abstract = {This paper investigates rendering glittery surfaces, ones which exhibit shifting random patterns of glints as the surface or viewer moves. It applies both to dramatically glittery surfaces that contain mirror-like flakes and also to rough surfaces that exhibit more subtle small scale glitter, without which most glossy surfaces appear too smooth in close-up. These phenomena can in principle be simulated by high-resolution normal maps, but maps with tiny features create severe aliasing problems under narrow-angle illumination. In this paper we present a stochastic model for the effects of random subpixel structures that generates glitter and spatial noise that behave correctly under different illumination conditions and viewing distances, while also being temporally coherent so that they look right in motion. The model is based on microfacet theory, but it replaces the usual continuous microfacet distribution with a discrete distribution of scattering particles on the surface. A novel stochastic hierarchy allows efficient evaluation in the presence of large numbers of random particles, without ever having to consider the particles individually. This leads to a multiscale procedural BRDF that is readily implemented in standard rendering systems, and which converges back to the smooth case in the limit.}
+}
+
+@article{Yan2014,
+  abbr = {SIGGRAPH},
+  author = {Yan, L. and Ha\v{s}an, M. and Jakob, W. and Lawrence, J. and Marschner, S. and Ramamoorthi, R.},
+  title = {Rendering Glints on High-Resolution Normal-Mapped Specular Surfaces},
+  journal = tog-s,
+  year = {2014},
+  volume = {33},
+  number = {4},
+  html = {https://doi.org/10.1145/2601097.2601155},
+  abstract = {Complex specular surfaces under sharp point lighting show a fascinating glinty appearance, but rendering it is an unsolved problem. Using Monte Carlo pixel sampling for this purpose is impractical: the energy is concentrated in tiny highlights that take up a minuscule fraction of the pixel. We instead compute an accurate solution using a completely different deterministic approach. Our method considers the true distribution of normals on a surface patch seen through a single pixel, which can be highly complex. We show how to evaluate this distribution efficiently, assuming a Gaussian pixel footprint and Gaussian intrinsic roughness. We also take advantage of hierarchical pruning of position-normal space to rapidly find texels that might contribute to a given normal distribution evaluation. Our results show complex, temporally varying glints from materials such as bumpy plastics, brushed and scratched metals, metallic paint and ocean waves.}
+}
+
+@article{Yang2011,
+  abbr = {SIGGRAPH},
+  author = {Yang, L. and Tse, Y. and Sander, P. V. and Lawrence, J. and Nehab, D. and Hoppe, H. and Wilkins, C. L.},
+  title = {Image-Based Bidirectional Scene Reprojection},
+  journal = tog-sa,
+  year = {2011},
+  volume = {30},
+  number = {6},
+  html = {https://doi.org/10.1145/2070781.2024184},
+  abstract = {We introduce a method for increasing the framerate of real-time rendering applications. Whereas many existing temporal upsampling strategies only reuse information from previous frames, our bidirectional technique reconstructs intermediate frames from a pair of consecutive rendered frames. This significantly improves the accuracy and efficiency of data reuse since very few pixels are simultaneously occluded in both frames. We present two versions of this basic algorithm. The first is appropriate for fill-bound scenes as it limits the number of expensive shading calculations, but involves rasterization of scene geometry at each intermediate frame. The second version, our more significant contribution, reduces both shading and geometry computations by performing reprojection using only image-based buffers. It warps and combines the adjacent rendered frames using an efficient iterative search on their stored scene depth and flow. Bidirectional reprojection introduces a small amount of lag. We perform a user study to investigate this lag, and find that its effect is minor. We demonstrate substantial performance improvements (3--4x) for a variety of applications, including vertex-bound and fill-bound scenes, multi-pass effects, and motion blur.}
+}
+
+@article{Holroyd2011,
+  abbr = {SIGGRAPH},
+  author = {Holroyd, M. and Baran, I. and Lawrence, J. and Matusik, W.},
+  title = {Computing and Fabricating Multilayer Models},
+  journal = tog-sa,
+  year = {2011},
+  volume = {30},
+  number = {6},
+  html = {https://doi.org/10.1145/2070781.2024221},
+  abstract = {We present a method for automatically converting a digital 3D model into a multilayer model: a parallel stack of high-resolution 2D images embedded within a semi-transparent medium. Multilayer models can be produced quickly and cheaply and provide a strong sense of an object's 3D shape and texture over a wide range of viewing directions. Our method is designed to minimize visible cracks and other artifacts that can arise when projecting an input model onto a small number of parallel planes, and avoid layer transitions that cut the model along important surface features. We demonstrate multilayer models fabricated with glass and acrylic tiles using commercially available printers.}
+}
+
+@article{Sitthiamorn2011,
+  abbr = {SIGGRAPH},
+  selected = true,  
+  author = {Sitthi-Amorn, P. and Modly, N. and Weimer, W. and Lawrence, J.},
+  title = {Genetic Programming for Shader Simplification},
+  journal = tog-sa,
+  year = {2011},
+  volume = {30},
+  number = {6},
+  html = {https://doi.org/10.1145/2070781.2024186},
+  abstract = {We present a framework based on Genetic Programming (GP) for automatically simplifying procedural shaders. Our approach computes a series of increasingly simplified shaders that expose the inherent trade-off between speed and accuracy. Compared to existing automatic methods for pixel shader simplification [Olano et al. 2003; Pellacini 2005], our approach considers a wider space of code transformations and produces faster and more faithful results. We further demonstrate how our cost function can be rapidly evaluated using graphics hardware, which allows tens of thousands of shader variants to be considered during the optimization process. Our approach is also applicable to multi-pass shaders and perceptual-based error metrics.}
+}
+
+@inproceedings{Holroyd2011,
+  abbr = {CVPR},
+  author = {Holroyd, M. and Lawrence, J.},
+  booktitle = cvpr,
+  title = {An Analysis of Using High-frequency Sinusoidal Illumination to Measure the 3D Shape of Translucent Objects},
+  year = {2011},
+  html = {https://ieeexplore.ieee.org/abstract/document/5995536},
+  abstract = {Using optical triangulation methods to measure the shape of translucent objects is difficult because subsurface scattering contaminates measurements of the “direct” reflection at the surface. A number of recent papers have shown that high-frequency sinusoidal illumination patterns allow isolating this direct component, which in turn enables accurate estimation of the shape of translucent objects. Despite these encouraging results, there is currently no rigorous mathematical analysis of the expected error in the measured surface as it relates to the parameters of these systems: the frequency of the projected sinusoid, the geometric configuration of the source and camera, and the optical properties of the target object. We present such an analysis, which confirms earlier empirical results and provides a much needed tool for designing 3D scanners for translucent objects.}
+}
+  
+@article{Yang2011,
+  abbr = {SIGGRAPH},
+  author = {Yang, L. and Sander, P. V. and Lawrence, J. and Hoppe, H.},
+  title = {Antialiasing Recovery},
+  journal = tog-s,
+  year = {2011},
+  volume = {30},
+  number = {3},
+  html = {https://doi.org/10.1145/1966394.1966401},
+  abstract = {We present a method for restoring antialiased edges that are damaged by certain types of nonlinear image filters. This problem arises with many common operations such as intensity thresholding, tone mapping, gamma correction, histogram equalization, bilateral filters, unsharp masking, and certain nonphotorealistic filters. We present a simple algorithm that selectively adjusts the local gradients in affected regions of the filtered image so that they are consistent with those in the original image. Our algorithm is highly parallel and is therefore easily implemented on a GPU. Our prototype system can process up to 500 megapixels per second and we present results for a number of different image filters.}
+}
+
+@techreport{Sweeney2011,
+  author = {Sweeney, C. and Liu, L. and Arietta, S. and Lawrence, J.},
+  title = {HIPI: A Hadoop Image Processing Interface for Image-based MapReduce Tasks},
+  institution = {University of Virginia},
+  year = {2011},
+  pdf = {hipi.pdf},
+  code = {https://github.com/uvagfx/hipi},
+  abstract = {The amount of images being uploaded to the internet is rapidly increasing, with Facebook users uploading over 2.5 billion new photos every month [Facebook 2010], however, applications that make use of this data are severely lacking. Current computer vision applications use a small number of input images because of the difficulty is in acquiring computational resources and storage options for large amounts of data [Guo... 2005; White et al. 2010]. As such, development of vision applications that use a large set of images has been limited [Ghemawat and Gobioff... 2003]. The Hadoop Mapreduce platform provides a system for large and computationally intensive distributed processing (Dean, 2004), though use of Hadoops system is severely limited by the technical complexities of developing useful applications [Ghemawat and Gobioff... 2003; White et al. 2010]. To immediately address this, we propose an open-source Hadoop Image Processing Interface (HIPI) that aims to create an interface for computer vision with MapReduce technology. HIPI abstracts the highly technical details of Hadoop’s system and is flexible enough to implement many techniques in current computer vision literature. This paper describes the HIPI framework, and describes two example applications that have been implemented with HIPI. The goal of HIPI is to create a tool that will make development of large-scale image processing and vision projects extremely accessible in hopes that it will empower researchers and students to create applications with ease.}
+}
+
+@article{Lepage2011,
+  abbr = {SIGGRAPH},
+  author = {Lepage, D. and Lawrence, J.},
+  title = {Material Matting},
+  journal = tog-sa,
+  year = {2011},
+  volume = {30},
+  number = {6},
+  html = {https://doi.org/10.1145/2070781.2024178},
+  abstract = {Despite the widespread use of measured real-world materials, intuitive tools for editing measured reflectance datasets are still lacking. We present a solution inspired by natural image matting and texture synthesis to the material matting problem, which allows separating a measured spatially-varying material into simpler foreground and background component materials and a corresponding opacity map. We approach this problem in the context of Bayesian statistics and introduce a new prior on materials that favors those with highly self-similar stochastic structure. We describe a prototype system that iteratively performs these separations based on small sets of user scribbles and demonstrate multiple separations and edits.}
+}
+
+@ARTICLE{Lawrence2011,
+  author = {Lawrence, J. and Arietta, S. and Kazhdan, M. and Lepage, D. and O'Hagan, C.},
+  journal = {IEEE Transactions on Visualization and Computer Graphics}, 
+  title = {A User-Assisted Approach to Visualizing Multidimensional Images}, 
+  year = {2011},
+  volume = {17},
+  number = {10},
+  html = {https://ieeexplore.ieee.org/abstract/document/5611511},
+  abstract = {We present a new technique for fusing together an arbitrary number of aligned images into a single color or intensity image. We approach this fusion problem from the context of Multidimensional Scaling (MDS) and describe an algorithm that preserves the relative distances between pairs of pixel values in the input (vectors of measurements) as perceived differences in a color image. The two main advantages of our approach over existing techniques are that it can incorporate user constraints into the mapping process and allows adaptively compressing or exaggerating features in the input in order to make better use of the output's limited dynamic range. We demonstrate these benefits by showing applications in various scientific domains and comparing our algorithm to previously proposed techniques.}
+}
+
+@article{Arietta2011,
+  author = {Arietta, S. and Lawrence, J.},
+  journal = {IEEE Computer Graphics and Applications}, 
+  title = {Building and Using a Database of One Trillion Natural-Image Patches}, 
+  year = {2011},
+  volume = {31},
+  number = {1},
+  html = {https://ieeexplore.ieee.org/abstract/document/5601662},
+  abstract = {Many example-based image processing algorithms operate on image patches (texture synthesis, resolution enhancement, image denoising, and so on). However, inaccessibility to a large, varied collection of image patches has hindered widespread adoption of these methods. The authors describe the construction of a database of one trillion image patches and demonstrate its research utility.}
+}
+
+@article{Holroyd2010,
+  abbr = {SIGGRAPH},
+  selected = true,
+  author = {Holroyd, M. and Lawrence, J. and Zickler, T.},
+  title = {A Coaxial Optical Scanner for Synchronous Acquisition of 3D Geometry and Surface Reflectance},
+  journal = tog-s,
+  year = {2010},
+  month = jul,
+  volume = {29},
+  number = {4},
+  html = {https://doi.org/10.1145/1778765.1778836},
+  supp = {coaxial_analysis.pdf},
+  abstract = {We present a novel optical setup and processing pipeline for measuring the 3D geometry and spatially-varying surface reflectance of physical objects. Central to our design is a digital camera and a high frequency spatially-modulated light source aligned to share a common focal point and optical axis. Pairs of such devices allow capturing a sequence of images from which precise measurements of geometry and reflectance can be recovered. Our approach is enabled by two technical contributions: a new active multiview stereo algorithm and an analysis of light descattering that has important implications for image-based reflectometry. We show that the geometry measured by our scanner is accurate to within 50 microns at a resolution of roughly 200 microns and that the reflectance agrees with reference data to within 5.5\%. Additionally, we present an image relighting application and show renderings that agree very well with reference images at light and view positions far from those that were initially measured.}
+}
+
+@article{Yang2009,
+  abbr = {SIGGRAPH},
+  author = {Yang, L. and Nehab, D. and Sander, P. V. and Sitthi-amorn, P. and Lawrence, J. and Hoppe, H.},
+  title = {Amortized Supersampling},
+  journal = tog-sa,
+  year = {2009},
+  volume = {28},
+  number = {5},
+  month = dec,
+  html = {https://doi.org/10.1145/1618452.1618481},
+  abstract = {We present a real-time rendering scheme that reuses shading samples from earlier time frames to achieve practical antialiasing of procedural shaders. Using a reprojection strategy, we maintain several sets of shading estimates at subpixel precision, and incrementally update these such that for most pixels only one new shaded sample is evaluated per frame. The key difficulty is to prevent accumulated blurring during successive reprojections. We present a theoretical analysis of the blur introduced by reprojection methods. Based on this analysis, we introduce a nonuniform spatial filter, an adaptive recursive temporal filter, and a principled scheme for locally estimating the spatial blur. Our scheme is appropriate for antialiasing shading attributes that vary slowly over time. It works in a single rendering pass on commodity graphics hardware, and offers results that surpass 4x4 stratified supersampling in quality, at a fraction of the cost.}
+}
+
+@article{Matusik2009,
+  abbr = {SIGGRAPH},
+  author = {Matusik, W. and Ajdin, B. and Gu, J. and Lawrence, J. and Lensch, H. P. A. and Pellacini, F. and Rusinkiewicz, S.},
+  title = {Printing Spatially-Varying Reflectance},
+  journal = tog-sa,
+  year = {2009},
+  volume = {28},
+  number = {5},
+  month = dec,
+  html = {https://doi.org/10.1145/1618452.1618474},
+  abstract = {Although real-world surfaces can exhibit significant variation in materials --- glossy, diffuse, metallic, etc. --- printers are usually used to reproduce color or gray-scale images. We propose a complete system that uses appropriate inks and foils to print documents with a variety of material properties. Given a set of inks with known Bidirectional Reflectance Distribution Functions (BRDFs), our system automatically finds the optimal linear combinations to approximate the BRDFs of the target documents. Novel gamut-mapping algorithms preserve the relative glossiness between different BRDFs, and halftoning is used to produce patterns to be sent to the printer. We demonstrate the effectiveness of this approach with printed samples of a number of measured spatially-varying BRDFs.}
+}
+
+@article{Donner2009,
+  abbr = {SIGGRAPH},
+  author = {Donner, C. and Lawrence, J. and Ramamoorthi, R. and Hachisuka, T. and Jensen, H. W. and Nayar, S.},
+  title = {An Empirical BSSRDF Model},
+  journal = tog-s,
+  year = {2009},
+  volume = {28},
+  number = {3},
+  month = jul,
+  html = {https://doi.org/10.1145/1576246.1531336},
+  abstract = {We present a new model of the homogeneous BSSRDF based on large-scale simulations. Our model captures the appearance of materials that are not accurately represented using existing single scattering models or multiple isotropic scattering models (e.g. the diffusion approximation). We use an analytic function to model the 2D hemispherical distribution of exitant light at a point on the surface, and a table of parameter values of this function computed at uniformly sampled locations over the remaining dimensions of the BSSRDF domain. This analytic function is expressed in elliptic coordinates and has six parameters which vary smoothly with surface position, incident angle, and the underlying optical properties of the material (albedo, mean free path length, phase function and the relative index of refraction). Our model agrees well with measured data, and is compact, requiring only 250MB to represent the full spatial- and angular-distribution of light across a wide spectrum of materials. In practice, rendering a single material requires only about 100KB to represent the BSSRDF.},
+}
+
+@article{Weyrich2009,
+  author = {Weyrich, T. and Lawrence, J. and Lensch, H. P. A. and Rusinkiewicz, S. and Zickler, T.},
+  title = {Principles of Appearance Acquisition and Representation},
+  year = {2009},
+  journal = {Foundations and Trends in Computer Graphics and Vision},
+  volume = {4},
+  number = {2},
+  html = {https://doi.org/10.1561/0600000022},
+abstract = {Algorithms for scene understanding and realistic image synthesis require accurate models of the way real-world materials scatter light. This study describes recent work in the graphics community to measure the spatially-and directionally-varying reflectance and subsurface scattering of complex materials, and to develop efficient representations and analysis tools for these datasets. We describe the design of acquisition devices and capture strategies for reflectance functions such as BRDFs and BSSRDFs, efficient factored representations, and a case study of capturing the appearance of human faces.}
+}
+
+@article{Sitthiamorn2008b,
+  abbr = {SIGGRAPH},
+  author = {Sitthi-amorn, P. and Lawrence, J. and Yang, L. and Sander, P. V. and Nehab, D. and Xi, J.},
+  title = {Automated Reprojection-Based Pixel Shader Optimization},
+  journal = tog-sa,
+  year = {2008},
+  volume = {27},
+  number = {5},  
+  html = {https://doi.org/10.1145/1457515.1409080},
+  abstract = {We present a framework and supporting algorithms to automate the use of temporal data reprojection as a general tool for optimizing procedural shaders. Although the general strategy of caching and reusing expensive intermediate shading calculations across consecutive frames has previously been shown to provide an effective trade-off between speed and accuracy, the critical choices of what to reuse and at what rate to refresh cached entries have been left to a designer. The fact that these decisions require a deep understanding of a procedure's semantic structure makes it challenging to select optimal candidates among possibly hundreds of alternatives. Our automated approach relies on parametric models of the way possible caching decisions affect the shader's performance and visual fidelity. These models are trained using a sample rendering session and drive an interactive profiler in which the user can explore the error/performance trade-offs associated with incorporating temporal reprojection. We evaluate the proposed models and selection algorithm with a prototype system used to optimize several complex shaders and compare our approach to current alternatives.},
+}
+
+@article{Holroyd2008,
+  abbr = {SIGGRAPH},
+  author = {Holroyd, M. and Lawrence, J. and Humphreys, G. and Zickler, T.},
+  title = {A Photometric Approach for Estimating Normals and Tangents},
+  journal = tog-sa,
+  year = {2008},
+  volume = {27},
+  number = {5},
+  html = {https://doi.org/10.1145/1409060.1409086},
+  abstract = {This paper presents a technique for acquiring the shape of real-world objects with complex isotropic and anisotropic reflectance. Our method estimates the local normal and tangent vectors at each pixel in a reference view from a sequence of images taken under varying point lighting. We show that for many real-world materials and a restricted set of light positions, the 2D slice of the BRDF obtained by fixing the local view direction is symmetric under reflections of the halfway vector across the normal-tangent and normal-binormal planes. Based on this analysis, we develop an optimization that estimates the local surface frame by identifying these planes of symmetry in the measured BRDF. As with other photometric methods, a key benefit of our approach is that the input is easy to acquire and is less sensitive to calibration errors than stereo or multi-view techniques. Unlike prior work, our approach allows estimating the surface tangent in the case of anisotropic reflectance. We confirm the accuracy and reliability of our approach with analytic and measured data, present several normal and tangent fields acquired with our technique, and demonstrate applications to appearance editing.}
+}
+
+@inproceedings{Sitthiamorn2008a,
+  author = {Sitthi-amorn, P. and Lawrence, J. and Yang, L. and Sander, P. V. and Nehab, D.},
+  title = {An Improved Shading Cache for Modern GPUs},
+  year = {2008},
+  booktitle = {Proceedings of Graphics Hardware},
+  pdf={improved_shading_cache.pdf},
+  abstract = {Several recently proposed techniques based on the principle of data reprojection allow reusing shading information generated in one frame to accelerate the calculation of the shading in the following frame. This strategy can significantly reduce the average rendering cost for many important real-time effects at an acceptable level of approximation error. This paper analyzes the overhead associated with incorporating temporal data reprojection on modern GPUs. Based on this analysis, we propose an alternative algorithm to those previously described in the literature and measure its efficiency for multiple scenes and hardware platforms.}
+}
+
+@article{Yang2008,
+  author = {Yang, L. and Sander, P. V. and Lawrence, J.},
+  title = {Geometry‐Aware Framebuffer Level of Detail},
+  journal = {Computer Graphics Forum},
+  year = {2008},
+  volume = {27},
+  number = {4},
+  html = {https://doi.org/10.1111/j.1467-8659.2008.01256.x},
+  abstract = {This paper introduces a framebuffer level of detail algorithm for controlling the pixel workload in an interactive rendering application. Our basic strategy is to evaluate the shading in a low resolution buffer and, in a second rendering pass, resample this buffer at the desired screen resolution. The size of the lower resolution buffer provides a trade‐off between rendering time and the level of detail in the final shading. In order to reduce approximation error we use a feature‐preserving reconstruction technique that more faithfully approximates the shading near depth and normal discontinuities. We also demonstrate how intermediate components of the shading can be selectively resized to provide finer‐grained control over resource allocation. Finally, we introduce a simple control mechanism that continuously adjusts the amount of resizing necessary to maintain a target framerate. These techniques do not require any preprocessing, are straightforward to implement on modern GPUs, and are shown to provide significant performance gains for several pixel‐bound scenes.}
+}
+
+@inproceedings{Nehab2007,
+  author = {Nehab, D. and Sander, P. V. and Lawrence, J. and Tatarchuk, N. and Isidoro, J. R.},
+  title = {Accelerating Real-Time Shading with Reverse Reprojection Caching},
+  year = {2007},
+  booktitle = {Proceedings of Graphics Hardware},
+  pdf={shading_cache.pdf},
+  abstract = {Evaluating pixel shaders consumes a growing share of the computational budget for real-time applications. However, the significant temporal coherence in visible surface regions, lighting conditions, and camera location allows reusing computationally-intensive shading calculations between frames to achieve significant performance improvements at little degradation in visual quality. This paper investigates a caching scheme based on reverse reprojection which allows pixel shaders to store and reuse calculations performed at visible surface points. We provide guidelines to help programmers select appropriate values to cache and present several policies for keeping cached entries up-to-date. Our results confirm this approach offers substantial performance gains for many common real-time effects, including precomputed global lighting effects, stereoscopic rendering, motion blur, depth of field, and shadow mapping.}
+}
+
+@article{Pellacini2007,
+  abbr = {SIGGRAPH},
+  author = {Pellacini, F. and Lawrence, J.},
+  title = {AppWand: Editing Measured Materials Using Appearance-Driven Optimization},
+  journal = tog-s,
+  year = {2007},
+  volume = {26},
+  number = {3},
+  html = {https://doi.org/10.1145/1275808.1276444},
+  abstract = {We investigate a new approach to editing spatially- and temporally-varying measured materials that adopts a stroke-based workflow. In our system, a user specifies a small number of editing constraints with a 3-D painting interface which are smoothly propagated to the entire dataset through an optimization that enforces similar edits are applied to areas with similar appearance. The sparse nature of this appearance-driven optimization permits the use of efficient solvers, allowing the designer to interactively refine the constraints. We have found this approach supports specifying a wide range of complex edits that would not be easy with existing techniques which present the user with a fixed segmentation of the data. Furthermore, it is independent of the underlying reflectance model and we show edits to both analytic and non-parametric representations in examples from several material databases.}
+}
+
+@inproceedings{Weistroffer2007,
+  author = {Weistroffer, R. P. and Walcott, K. R. and Humphreys, G. and Lawrence, J.},
+  title = {Efficient Basis Decomposition for Scattered Reflectance Data},
+  year = {2007},
+  booktitle = {Proceedings of the Eurographics Symposium on Rendering (EGSR)},
+  pdf={efficient_basis_decomp.pdf},
+  abstract = {Recent progress in acquisition technology has increased the availability and quality of measured appearance data. Although representations based on dimensionality reduction provide the greatest fidelity to measured data, they require assembling a high-resolution and regularly sampled matrix from sparse and non-uniformly scattered input. Constructing and processing this immense matrix becomes a significant computational bottleneck. We describe a technique for performing basis decomposition directly from scattered measurements. Our approach is flexible in how the basis is represented and can accommodate any number of linear constraints on the factorization. Because its time- and space-complexity is proportional to the number of input measurements and the size of the output, we are able to decompose multi-gigabyte datasets faster and at lower error rates than currently available techniques. We evaluate our approach by representing measured spatially-varying reflectance within a reduced linear basis defined over radial basis functions and a database of measured BRDFs.}
+}
+
+@phdthesis{LawrencePhdThesis,
+  author = {Lawrence, J.},
+  title = {Acquisition and Representation of Material Appearance for Editing and Rendering},
+  school = {Princeton University},
+  year = {2006},
+  pdf = {lawrence_phdthesis.pdf},
+  abstract = {Providing computer models that accurately characterize the appearance of a wide class of materials is of great interest to both the computer graphics and computer vision communities. The last ten years has witnessed a surge in techniques for measuring the optical properties of physical materials. As compared to conventional techniques that rely on hand-tuning parametric light reflectance functions, a data-driven approach is better suited for representing complex real-world appearance. However, incorporating these representations into existing rendering algorithms and a practical production pipeline has remained an open research problem. One common approach has been to fit the parameters of an analytic reflectance function to measured appearance data. This has the benefit of providing significant compression ratios and these analytic models are already fully integrated into modern rendering algorithms. However, this approach can lead to significant approximation errors for many materials and it requires computationally expensive and numerically unstable non-linear optimization. An alternative approach is to compress these datasets, using algorithms such as Principal Component Analysis, wavelet compression or matrix factorization. Although these techniques provide an accurate and compact representation, they do have several drawbacks. In particular, existing methods do not enable efficient importance sampling for measured materials (and even some complex analytic models) in the context of physically-based rendering systems. Additionally, these representations do not allow editing. In this thesis, we introduce techniques for acquiring and representing real-world material appearance that address these research challenges. First, we introduce the Inverse Shade Trees (IST) framework. This is a conceptual framework for representing high-dimensional measured appearance data as a tree-structured collection of simpler masks and functions. We use it to provide an intuitive representation of the Spatially-Varying Bidirectional Reflectance Distribution Function (SVBRDF) that is automatically computed from measured data. Like other data-driven techniques, ISTs are more accurate than fitting parametric BRDFs to measured appearance data, but are intuitive enough to support direct editing. We also introduce a factored model of the BRDF optimized to support efficient importance sampling in the context of global illumination rendering. We demonstrate that our technique provides more efficient sampling than previous methods that sample a best-fit parametric model.}
+}
+
+@article{Lawrence2006,
+  abbr = {SIGGRAPH},
+  selected = {true},
+  author = {Lawrence, J. and Ben-Artzi, A. and DeCoro, C., and Matusik, W., and Pfister, H. and Ramamoorthi, R. and Rusinkiewicz, S.},
+  title = {Inverse Shade Trees for Non-Parametric Material Representation and Editing},
+  journal = tog-s,
+  year = {2006},
+  volume = {25},
+  number = {3},
+  html = {https://doi.org/10.1145/1141911.1141949},
+  abstract = {Recent progress in the measurement of surface reflectance has created a demand for non-parametric appearance representations that are accurate, compact, and easy to use for rendering. Another crucial goal, which has so far received little attention, is editability: for practical use, we must be able to change both the directional and spatial behavior of surface reflectance (e.g., making one material shinier, another more anisotropic, and changing the spatial "texture maps" indicating where each material appears). We introduce an Inverse Shade Tree framework that provides a general approach to estimating the "leaves" of a user-specified shade tree from high-dimensional measured datasets of appearance. These leaves are sampled 1- and 2-dimensional functions that capture both the directional behavior of individual materials and their spatial mixing patterns. In order to compute these shade trees automatically, we map the problem to matrix factorization and introduce a flexible new algorithm that allows for constraints such as non-negativity, sparsity, and energy conservation. Although we cannot infer every type of shade tree, we demonstrate the ability to reduce multi-gigabyte measured datasets of the Spatially-Varying Bidirectional Reflectance Distribution Function (SVBRDF) into a compact representation that may be edited in real time.}
+}
+
+@article{Peers2006,
+  abbr = {SIGGRAPH},
+  author = {Peers, P. and vom Berge, K. and Matusik, W. and Ramamoorthi, R. and Lawrence, J. and Rusinkiewicz, S. and Dutr\'{e}, P.},
+  title = {A Compact Factored Representation of Heterogeneous Subsurface Scattering},
+  journal = tog-s,
+  year = {2006},
+  volume = {25},
+  number = {3},  
+  html = {https://doi.org/10.1145/1179352.1141950},
+  abstract = {Many translucent materials exhibit heterogeneous subsurface scattering, which arises from complex internal structures. The acquisition and representation of these scattering functions is a complex problem that has been only partially addressed in previous techniques. Unlike homogeneous materials, the spatial component of heterogeneous subsurface scattering can vary arbitrarily over surface locations. Storing the spatial component without compression leads to impractically large datasets. In this paper, we address the problem of acquiring and compactly representing the spatial component of heterogeneous subsurface scattering functions. We propose a material model based on matrix factorization that can be mapped onto arbitrary geometry, and, due to its compact form, can be incorporated into most visualization systems with little overhead. We present results of several real-world datasets that are acquired using a projector and a digital camera.}
+}
+
+@inproceedings{Lawrence2005,
+  author = {Lawrence, J. and Rusinkiewicz, S. and Ramamoorthi},
+  title = {Adaptive Numerical Cumulative Distribution Functions for Efficient Importance Sampling},
+  year = {2005},
+  booktitle = {Proceedings of the Eurographics Symposium on Rendering (EGSR)},
+  pdf={adaptivecdf.pdf},
+  abstract = {As image-based surface reflectance and illumination gain wider use in physically-based rendering systems, it is becoming more critical to provide representations that allow sampling light paths according to the distribution of energy in these high-dimensional measured functions. In this paper, we apply algorithms traditionally used for curve approximation to reduce the size of a multidimensional tabulated Cumulative Distribution Function (CDF) by one to three orders of magnitude without compromising its fidelity. These adaptive representations enable new algorithms for sampling environment maps according to the local orientation of the surface and for multiple importance sampling of image-based lighting and measured BRDFs.}
+}
+
+@inproceedings{Luong2005,
+  author = {Luong, T.Q. and Seth, A. and Klein, A. and Lawrence, J.},
+  title = {Isoluminant Color Picking for Non-Photorealistic Rendering},
+  year = {2005},
+  booktitle = {Proceedings of Graphics Interface},
+  pdf={isoluminant.pdf},
+  abstract = {The physiology of human visual perception helps explain different uses for color and luminance in visual arts. When visual fields are isoluminant, they look the same to our luminance processing pathway, while potentially looking quite different to the color processing path. This creates a perceptual tension exploited by skilled artists. In this paper, we show how reproducing a target color using a set of isoluminant yet distinct colors can both improve existing NPR image filters and help create new ones. A straight-forward, geometric technique for isoluminant color picking is presented, and then applied in an improved pointillist filter, a new Chuck Close inspired filter, and a novel type of image mosaic filter.}
+}
+
+@article{Lawrence2004,
+  abbr = {SIGGRAPH},
+  author = {Lawrence, J. and Rusinkiewicz, S. and Ramamoorthi, R.},
+  title = {Efficient BRDF Importance Sampling Using a Factored Representation},
+  year = {2004},
+  journal = tog-s,
+  volume = {23},
+  number = {3},
+  html = {https://doi.org/10.1145/1015706.1015751},
+  abstract = {High-quality Monte Carlo image synthesis requires the ability to importance sample realistic BRDF models. However, analytic sampling algorithms exist only for the Phong model and its derivatives such as Lafortune and Blinn-Phong. This paper demonstrates an importance sampling technique for a wide range of BRDFs, including complex analytic models such as Cook-Torrance and measured materials, which are being increasingly used for realistic image synthesis. Our approach is based on a compact factored representation of the BRDF that is optimized for sampling. We show that our algorithm consistently offers better efficiency than alternatives that involve fitting and sampling a Lafortune or Blinn-Phong lobe, and is more compact than sampling strategies based on tabulating the full BRDF. We are able to efficiently create images involving multiple measured and analytic BRDFs, under both complex direct lighting and global illumination.}
+}
+
+@inproceedings{Lawrence2003,
+  author = {Lawrence, J. and Funkhouser, T.},
+  title = {A Painting Interface for Interactive Surface Deformations},
+  year = {2003},
+  booktitle = {Pacific Conference on Computer Graphics and Applications},
+  pdf={paint.pdf},
+  abstract = {A long-standing challenge in geometric modeling is providing a natural, intuitive interface for making local deformations to 3D surfaces. Previous approaches have provided
+either interactive manipulation or physical simulation to control surface deformations. In this paper, we investigate combining these two approaches with a painting interface that
+gives the user direct, local control over a physical simulation. The “paint” a user applies to the model defines its instantaneous surface velocity. By interactively simulating this velocity, the user can effect surface deformations. We have found that this painting metaphor gives the user direct, local control over surface deformations for several applications: creating new models, removing noise from existing models, and adding geometric texture to an existing surface at multiple scales.}
+}
+
+@article{Kallay2003,
+  author = {Kallay, M. and Lawrence, J.},
+  title = {Improving the Two-Pass Resampling Algorithm},
+  journal = {Journal of Graphics Tools},
+  year = {2003},
+  volume = {8},
+  number = {2},
+  pdf={twopass.pdf},  
+  abstract = {The Catmull-Smith two-pass resampling algorithm simplifies the nontrivial reconstruction of a transformed two-dimensional image by decomposing the transformation into two one-dimensional passes. We present a theoretically motivated modification to this algorithm that provides improved image quality. For the case of projective transformations, this improvement results in a final algorithm that is more robust and accurate than the original while even affecting correctness in some cases.}
+}
