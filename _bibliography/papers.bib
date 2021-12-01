@@ -4,26 +4,40 @@
 @string{tog-s = {ACM Transactions on Graphics (Proc. of SIGGRAPH)}}
 @string{tog-sa = {ACM Transactions on Graphics (Proc. of SIGGRAPH Asia)}}
 @string{cvpr = {Proceedings of Conference on Computer Vision and Pattern Recognition (CVPR)}}
+@string{iccv = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)}}
 
-@misc{Luo2020,
+@article{Lawrence2021,
+  abbr = {SIGGRAPH},
+  selected = true,  
+  author = {Lawrence, J. and Goldman, D. B and Achar, S. and Blascovich, G. M. and Desloge, J. G. and Fortes, T. and Gomez, E. M. and Häberling, S. and Hoppe, H. and Huibers, A. and Knaus, C. and Kuschak, B. and Martin-Brualla, R. and Nover, H. and Russell, A. I. and Seitz, S. M. and Tong, K.},
+  title	= {Project Starline: A high-fidelity telepresence system},
+  journal = tog-sa,
+  year = {2021},
+  volume = {40},
+  number = {6},
+  html = {https://research.google/pubs/pub50903},
+  abstract = {We present a real-time bidirectional communication system that lets two people, separated by distance, experience a face-to-face conversation as if they were copresent. It is the first telepresence system that is demonstrably better than 2D videoconferencing, as measured using participant ratings (e.g., presence, attentiveness, reaction-gauging, engagement), meeting recall, and observed nonverbal behaviors (e.g., head nods, eyebrow movements). This milestone is reached by maximizing audiovisual fidelity and the sense of copresence in all design elements, including physical layout, lighting, face tracking, multi-view capture, microphone array, multi-stream compression, loudspeaker output, and lenticular display. Our system achieves key 3D audiovisual cues (stereopsis, motion parallax, and spatialized audio) and enables the full range of communication cues (eye contact, hand gestures, and body language), yet does not require special glasses or body-worn microphones/headphones. The system consists of a head-tracked autostereoscopic display, high-resolution 3D capture and rendering subsystems, and network transmission using compressed color and depth video streams. Other contributions include a novel image-based geometry fusion algorithm, free-space dereverberation, and talker localization.}
+}
+
+@article{Luo2021,
+  abbr = {SIGGRAPH},
   author = {Luo, X. and Zhang, X. and Yoo, P. and Martin-Brualla, R. and Lawrence, J. and Seitz, S. M.},
   title = {Time-Travel Rephotography},
+  journal = tog-sa,
+  year = {2021},
+  volume = {40},
+  number = {6},
   html = {https://time-travel-rephotography.github.io/},
-  year = {2020},
-  eprint = {2012.12261},
-  prefix = {arXiv},
-  primaryClass = {cs.CV},
   abstract = {Many historical people are captured only in old, faded, black and white photos, that have been distorted by the limitations of early cameras and the passage of time. This paper simulates traveling back in time with a modern camera to rephotograph famous subjects. Unlike conventional image restoration filters which apply independent operations like denoising, colorization, and superresolution, we leverage the StyleGAN2 framework to project old photos into the space of modern high-resolution photos, achieving all of these effects in a unified framework. A unique challenge with this approach is capturing the identity and pose of the photo's subject and not the many artifacts in low-quality antique photos. Our comparisons to current state-of-the-art restoration filters show significant improvements and compelling results for a variety of important historical people.}
 }
 
-@misc{Xia2020,
+@inproceedings{Xia2021,
+  abbr = {ICCV},
   author = {Xia, Z. and Lawrence, J. and Achar, S.},
+  booktitle = iccv,
   title = {A Dark Flash Normal Camera},
+  year = {2021},
   html = {https://darkflashnormalpaper.github.io/},
-  year = {2020},
-  eprint = {2012.06125},
-  prefix = {arXiv},
-  primaryClass = {cs.CV},
   abstract = {Casual photography is often performed in uncontrolled lighting that can result in low quality images and degrade the performance of downstream processing. We consider the problem of estimating surface normal and reflectance maps of scenes depicting people despite these conditions by supplementing the available visible illumination with a single near infrared (NIR) light source and camera, a so-called "dark flash image". Our method takes as input a single color image captured under arbitrary visible lighting and a single dark flash image captured under controlled front-lit NIR lighting at the same viewpoint, and computes a normal map, a diffuse albedo map, and a specular intensity map of the scene. Since ground truth normal and reflectance maps of faces are difficult to capture, we propose a novel training technique that combines information from two readily available and complementary sources: a stereo depth signal and photometric shading cues. We evaluate our method over a range of subjects and lighting conditions and describe two applications: optimizing stereo geometry and filling the shadows in an image.}
 }
 
