@@ -1,3 +1,3 @@
 #!/bin/bash
 
-gsutil rsync -r _site gs://jasonlawrence.info
+gsutil -m rsync -rd _site gs://jasonlawrence.info
