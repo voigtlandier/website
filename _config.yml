@@ -106,6 +106,11 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - CLAUDE.md
+  - docker-compose.yml
+  - gcloud_sync.sh
+  - run_local.sh
+  - README.md
 keep_files:
   - CNAME
   - .nojekyll
