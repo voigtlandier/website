@@ -8,9 +8,8 @@ middle_name:
 last_name: Lawrence
 email:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Jason Lawrence — Engineering director at Google and co-founder of Google Beam. Former CS professor at UVA.
 footer_text: >
-  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 
 #url:  # the base hostname & protocol for your site
 #baseurl: /al-folio # the subpath of your site, e.g. /blog/
@@ -31,8 +30,8 @@ max_width: 800px
 # Open Graph
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+og_image: /assets/img/jason_lawrence.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Social integration
@@ -47,7 +46,7 @@ work_url: # work page URL
 #contact_note: >
 #  You can even add a little note about which of these is the best way to reach you.
 
-google_analytics: UA-263197179
+google_analytics:
 
 
 # -----------------------------------------------------------------------------
@@ -160,7 +159,7 @@ enable_mansory:             true
 enable_math:                true
 enable_tooltips:            false
 enable_darkmode:            true
-show_social_icons:          false
+show_social_icons:          true
 
 # -----------------------------------------------------------------------------
 # Library versions
