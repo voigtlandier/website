@@ -109,7 +109,7 @@ a, table.table a {
       }
   }
   .contact-icon {
-    font-size: 2rem;
+    font-size: 1.5rem;
     a {
       &:hover {
         color: var(--global-hover-color);
@@ -170,9 +170,10 @@ a, table.table a {
 .social {
   text-align: center;
   .contact-icon {
-    font-size: 4rem;
+    font-size: 3rem;
     a {
       color: var(--global-icon-color);
+      padding: 0 0.3rem;
       &:hover {
         color: var(--global-theme-color);
       }
